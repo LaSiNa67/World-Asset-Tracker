@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hard Asset Tracker</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="wrap">
+    <header>
+      <h1>Hard Asset Tracker</h1>
+      <p class="sub">Spot price of 1 Bitcoin and 1 troy ounce of gold, silver, and platinum</p>
+      <p><a href="rankings.html">Top 10 assets by market cap →</a></p>
+    </header>
+
+    <p id="status" class="status">Loading prices…</p>
+    <section class="grid" id="cards"></section>
+
+    <p class="note">
+      Prices are spot estimates from a public FX/metals feed, not dealer quotes.
+      Not financial advice. Metals markets are not 24/7.
+    </p>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
