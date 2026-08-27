@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Top 10 assets by market cap</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="wrap">
+    <p><a href="index.html">← Unit prices</a></p>
+    <h1>Top 10 assets by market cap</h1>
+    <p class="sub">Metals, large public companies, and Bitcoin. SpaceX omitted (private).</p>
+    <p id="status" class="status">Loading…</p>
+    <table>
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Name</th>
+          <th>Type</th>
+          <th class="num">Market cap</th>
+          <th class="num">Price</th>
+          <th class="num">Today</th>
+        </tr>
+      </thead>
+      <tbody id="rows"></tbody>
+    </table>
+    <p class="note">
+      Gold/silver cap = spot × estimated ounces above ground.
+      Stock rows use live quotes when the feed allows; otherwise last known fallback.
+      Not financial advice.
+    </p>
+  </main>
+  <script src="rankings.js"></script>
+</body>
+</html>
